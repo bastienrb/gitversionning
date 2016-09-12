@@ -142,17 +142,14 @@ SUMMARY
 				title = :title,
 				file = :file
 		";
-
 		$req = $db->prepare($sql);
 		$req->execute(array(
 			':user_id' => $user_id,
 			':title' => $title,
 			':file' => $file,
 		));
-
 		return true;
 	}
-
 	/*1.6!updateMusic
 		return :
 			true if music updated
