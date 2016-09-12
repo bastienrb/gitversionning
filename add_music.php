@@ -14,9 +14,8 @@ if( isset($_FILES['music']) && !empty($_FILES['music']) &&
 		if (preg_match('/\.(mp3|ogg)$/i', $file['name'])) {
 			$filename = md5(uniqid(rand(), true));
 			$destination = "musics/{$filename}.{$_SESSION['id']}.{$ext}";
-
-			addMusic($db, $_SESSION['id'], $_POST['title'], $file);
-			header('Location: dashboard.php');
+			var_dump($destination);
+			addMusic($db, $_SESSION['id'], $_POST['title'], $destination);
 
 		} else {
 			$error = 'Erreur, le fichier n\'a pas une extension autorisée !';
