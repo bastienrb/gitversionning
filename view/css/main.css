@@ -413,3 +413,8 @@ p.account a {
 	font-family: monospace;
 	font-size: 10px; /* reduced font size */
 }
+
+.imagelogo img{
+	margin-top: 20px;
+	width: 20%;
+}

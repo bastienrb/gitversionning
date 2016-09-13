@@ -1,5 +1,11 @@
 <body style="background-color: #333;">
 	<section id="login-container">
+	<div class="container imagelogo">
+<div class="row">
+  <div class="span4"></div>
+  <div class="span4"><img class="center-block" src="images/soundcloudlogo.png" /></div>
+  <div class="span4"></div>
+</div>
 		<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 midway-horizontal midway-vertical fadeInDown animated">
 			<div id="logbox">
 			<?php if(isset($error) && !empty($error)){ ?>
