@@ -22,7 +22,7 @@ if(isset($_POST['email']) && isset($_POST['password'])){
 			header('Location: dashboard.php');
 		}
 		else{
-			$error = $hashh;
+			$error = "Identifiants Incorrects !";
 		}
 		
 
