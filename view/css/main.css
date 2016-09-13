@@ -176,8 +176,9 @@ p.account a {
 	border: none;
 	background-color: #f50;
 	border: solid 1px #F50;
+	border-radius: 4px;
 	float: right;
-	line-height: 25px;
+	line-height: 20px;
 	color:white;
 	text-transform: uppercase;
 	font-size: 11px;
@@ -191,6 +192,10 @@ p.account a {
 	color: #F50;
 	border: solid 1px #F50;
 	text-decoration: none;
+    -webkit-transition-duration: 0.25s;
+    -moz-transition-duration: 0.25s;
+    -o-transition-duration: 0.25s;
+    transition-duration: 0.25s;
 }
 
 
