@@ -1,99 +1,55 @@
--- phpMyAdmin SQL Dump
--- version 4.5.0.2
--- http://www.phpmyadmin.net
---
--- Client :  localhost
--- Généré le :  Ven 02 Octobre 2015 à 13:55
--- Version du serveur :  10.0.21-MariaDB-log
--- Version de PHP :  5.6.13
+/*
+Navicat MySQL Data Transfer
 
-SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET time_zone = "+00:00";
+Source Server         : Danesia
+Source Server Version : 50617
+Source Host           : localhost:3306
+Source Database       : iim_git_soundcloud
 
+Target Server Type    : MYSQL
+Target Server Version : 50617
+File Encoding         : 65001
 
-/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
-/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
-/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!40101 SET NAMES utf8mb4 */;
+Date: 2016-09-13 02:12:24
+*/
 
---
--- Base de données :  `IIM_Git_SoundCloud`
---
-
--- --------------------------------------------------------
-
---
--- Structure de la table `musics`
---
-
+SET FOREIGN_KEY_CHECKS=0;
+-- ----------------------------
+-- Table structure for `musics`
+-- ----------------------------
+DROP TABLE IF EXISTS `musics`;
 CREATE TABLE `musics` (
-  `id` int(11) UNSIGNED NOT NULL,
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
   `user_id` int(11) NOT NULL COMMENT 'refers to id in users table',
   `title` varchar(100) NOT NULL,
   `file` varchar(255) NOT NULL,
-  `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+  `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8;
 
---
--- Contenu de la table `musics`
---
+-- ----------------------------
+-- Records of musics
+-- ----------------------------
+INSERT INTO `musics` VALUES ('1', '1', 'UN*DEUX - Shopping Day', 'musics/d0dbde0148d66ddf8ae815e014e2a668.1.mp3', '2015-10-01 15:35:05');
+INSERT INTO `musics` VALUES ('2', '1', 'FlicFlac - Can\'t Get Away (Bootleg)', 'musics/4baf839a4706fdc8caf286cd35dba410.1.mp3', '2015-10-02 13:41:26');
+INSERT INTO `musics` VALUES ('3', '3', 'Wu Tang Clan - Protect Ya Neck', 'musics/4297e49507d04bb995759b3aced264c8.3.mp3', '2016-09-13 02:00:06');
 
-INSERT INTO `musics` (`id`, `user_id`, `title`, `file`, `created_at`) VALUES
-(1, 1, 'UN*DEUX - Shopping Day', 'musics/d0dbde0148d66ddf8ae815e014e2a668.1.mp3', '2015-10-01 13:35:05'),
-(2, 1, 'FlicFlac - Can''t Get Away (Bootleg)', 'musics/4baf839a4706fdc8caf286cd35dba410.1.mp3', '2015-10-02 11:41:26');
-
--- --------------------------------------------------------
-
---
--- Structure de la table `users`
---
-
+-- ----------------------------
+-- Table structure for `users`
+-- ----------------------------
+DROP TABLE IF EXISTS `users`;
 CREATE TABLE `users` (
-  `id` int(11) UNSIGNED NOT NULL,
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
   `username` varchar(20) NOT NULL,
   `email` varchar(255) NOT NULL,
   `password` varchar(255) NOT NULL COMMENT 'encrypted passwords are better',
   `picture` varchar(255) NOT NULL COMMENT 'name of profile picture',
-  `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+  `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
 
---
--- Contenu de la table `users`
---
-
-INSERT INTO `users` (`id`, `username`, `email`, `password`, `picture`, `created_at`) VALUES
-(1, 'Git', 'git@initiation.com', 'password', 'view/profil_pic/e8df43b8a90546b15da8591c89711879.1.jpg', '2015-10-01 11:13:46');
-
---
--- Index pour les tables exportées
---
-
---
--- Index pour la table `musics`
---
-ALTER TABLE `musics`
-  ADD PRIMARY KEY (`id`);
-
---
--- Index pour la table `users`
---
-ALTER TABLE `users`
-  ADD PRIMARY KEY (`id`);
-
---
--- AUTO_INCREMENT pour les tables exportées
---
-
---
--- AUTO_INCREMENT pour la table `musics`
---
-ALTER TABLE `musics`
-  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
---
--- AUTO_INCREMENT pour la table `users`
---
-ALTER TABLE `users`
-  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
-/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
-/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
-/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+-- ----------------------------
+-- Records of users
+-- ----------------------------
+INSERT INTO `users` VALUES ('1', 'Git', 'git@initiation.com', 'password', 'view/profil_pic/e8df43b8a90546b15da8591c89711879.1.jpg', '2015-10-01 13:13:46');
+INSERT INTO `users` VALUES ('3', 'bastienrb', 'bastien.robert@wanadoo.fr', 'coucou', 'view/profil_pic/8be11fe0b787f72419fd24a52b8a4679.3.png', '2016-09-12 18:31:43');
