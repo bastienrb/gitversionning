@@ -14,7 +14,7 @@ require('model/functions.fn.php');
 if(isset($_POST['email']) && isset($_POST['password'])){
 	if(!empty($_POST['email']) && !empty($_POST['password'])){
 
-		$hashh = password_hash($_POST['password'], PASSWORD_DEFAULT);
+		$hashh = md5($_POST['password']);
 
 		$userc = userConnection($db, $_POST['email'], $hashh);
 
@@ -22,7 +22,7 @@ if(isset($_POST['email']) && isset($_POST['password'])){
 			header('Location: dashboard.php');
 		}
 		else{
-			$error = "Identifiants incorrects !";
+			$error = $hashh;
 		}
 		
 
