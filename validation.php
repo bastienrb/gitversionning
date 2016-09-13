@@ -15,8 +15,10 @@ if ((!$MailCheck) || (!$NameCheck)){
 elseif(	isset($_POST['username']) && isset($_POST['email']) && isset($_POST['password']) && 
 	!empty($_POST['username']) && !empty($_POST['email']) && !empty($_POST['password'])) {
 
-	userRegistration($db, $_POST['username'], $_POST['email'], $_POST['password']);
-	header('Location: dashboard.php');
+	userRegistration($db, $_POST['username'], $_POST['email'], $_POST['password']);	
+
+	$_SESSION['message'] = 'Merci de votre inscription ! Vous pouvez désormais vous connecter.';
+	header('Location: login.php');
 
 }
 
@@ -27,6 +29,6 @@ else{
 }
 
 else{
-	$_SESSION['message'] = "Merci d'entrer une adresse mail valide";
+	$_SESSION['message'] = "Merci d'entrer une adresse mail valide.";
 	header('Location: register.php');
 }

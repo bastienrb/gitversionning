@@ -8,6 +8,12 @@
 					<?php echo $error; ?>
 				</div>
 			<?php } ?>
+			<?php if(isset($_SESSION['message']) && !empty($_SESSION['message'])){ ?>
+				<div class="alert alert-success alert-dismissable">
+					<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+					<?php echo $_SESSION['message']; ?>
+				</div>
+			<?php } ?>
 				<h1><i class="fa fa-soundcloud"></i> Connectez-vous !</h1>
 				<form method="POST" action="login.php">
 					<div class="form-input">
