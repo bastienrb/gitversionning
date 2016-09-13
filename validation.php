@@ -5,7 +5,7 @@ session_start();
 
 $MailCheck = isEmailAvailable($db, $_POST['email']);
 $NameCheck = isUsernameAvailable($db, $_POST['username']);
-
+if (filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)){
 
 if ((!$MailCheck) || (!$NameCheck)){
 	$_SESSION['message'] = "Votre nom d'utilisateur ou votre email est déjà utilisé";
@@ -22,5 +22,11 @@ elseif(	isset($_POST['username']) && isset($_POST['email']) && isset($_POST['pas
 
 else{ 
 	$_SESSION['message'] = 'Erreur : Formulaire incomplet';
+	header('Location: register.php');
+}
+}
+
+else{
+	$_SESSION['message'] = "Merci d'entrer une adresse mail valide";
 	header('Location: register.php');
 }
