@@ -13,10 +13,13 @@ input:focus {
 }
 
 #logbox {
+	margin-top: 50px;
 	padding: 40px;
 	background-color: #333;
 	color: #fff;
 }
+
+
 
 #logbox.register {
 	background-color: #333;
