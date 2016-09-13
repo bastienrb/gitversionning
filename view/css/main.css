@@ -1,6 +1,6 @@
 body {
 
-	background-color: #545358;
+	background-color: #474747;
 
 }
 
@@ -203,6 +203,7 @@ p.account a {
 	padding-bottom: 20px;
 	letter-spacing: 1px;
 	border-bottom: 1px solid #CCC;
+	color: white;
 }
 
 .music,
@@ -420,4 +421,12 @@ p.account a {
 .imagelogo img{
 	margin-top: 20px;
 	width: 20%;
+}
+
+.fa-clock-o{
+	color: white;
+}
+
+.feedtext{
+	color: white;
 }
