@@ -4,7 +4,7 @@ require('config/config.php');
 require('model/functions.fn.php');
 
 
-
+countMusic($_GET['name']);
 
 
 include 'view/_header.php';

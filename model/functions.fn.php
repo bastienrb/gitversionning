@@ -282,3 +282,18 @@ SUMMARY
 			':id' => $user_id
 		));
 	}
+
+	function countMusic(PDO $db, $userid){
+
+		$sql = "SELECT id FROM
+					musics
+				WHERE
+					id = :id
+				";
+			$req = $db -> prepare($sql);
+			$req -> execute(array(
+					':id' => $userid
+				));
+		return $req->count();
+
+	}
