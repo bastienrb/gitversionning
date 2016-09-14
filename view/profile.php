@@ -42,6 +42,10 @@
 									<br>
 									Création du compte : <?php echo $result['created_at']; ?>
 								</p>
+								<p>
+									<br>
+									Mail : <?php echo $result['email']; ?>
+								</p>
 
 							</div>
 						</div>
