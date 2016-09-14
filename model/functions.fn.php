@@ -299,7 +299,7 @@ SUMMARY
 
 	function countMusic(PDO $db, $userid){
 
-		$sql = "SELECT id FROM
+		$sql = "SELECT user_id FROM
 					musics
 				WHERE
 					user_id = :id
