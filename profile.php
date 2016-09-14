@@ -4,10 +4,12 @@ require('config/config.php');
 require('model/functions.fn.php');
 
 
-countMusic($_GET['name']);
 
 
 include 'view/_header.php';
 include 'view/profile.php';
 include 'view/_footer.php';
+
+
+
 

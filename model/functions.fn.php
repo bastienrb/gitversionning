@@ -283,12 +283,26 @@ SUMMARY
 		));
 	}
 
+	function getUserid(PDO $db, $username){
+		$sql = "SELECT * FROM
+					users
+				WHERE
+					username = :username
+				";
+			$req = $db -> prepare($sql);
+			$req -> execute(array(
+					':username' => $username
+				));
+			$result = $req->fetch(PDO::FETCH_ASSOC);
+			return $result['id'];
+	}
+
 	function countMusic(PDO $db, $userid){
 
 		$sql = "SELECT id FROM
 					musics
 				WHERE
-					id = :id
+					user_id = :id
 				";
 			$req = $db -> prepare($sql);
 			$req -> execute(array(
