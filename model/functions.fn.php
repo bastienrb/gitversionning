@@ -308,6 +308,7 @@ SUMMARY
 			$req -> execute(array(
 					':id' => $userid
 				));
-		return $req->count();
+			$result = $req->fetch(PDO::FETCH_ASSOC);
+			return count($result);
 
 	}

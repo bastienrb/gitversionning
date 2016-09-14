@@ -47,6 +47,11 @@
 									Mail : <?php echo $result['email']; ?>
 								</p>
 
+								<p>
+									<br>
+									Nombre de musiques postées : <?php echo $countmusic; ?>
+								</p>
+
 							</div>
 						</div>
 					</div>
