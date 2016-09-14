@@ -283,6 +283,20 @@ p.account a {
 	background-color: #2ecc71;
 }
 
+.site-footer, .page-wrap:after {
+  /* .push must be the same height as footer */
+	height: 142px; 
+}
+.site-footer {
+  background: #333;
+}
+
+.text {
+	color: white;
+}
+
+
+
 .image:before {
 	-moz-transition: opacity 0.2s ease-in-out;
 	-webkit-transition: opacity 0.2s ease-in-out;

@@ -5,6 +5,8 @@
 
 	<script src="view/js/main.js"></script>
 
+	<footer>FOOTER</footer>
+
 	<?php if(basename($_SERVER['PHP_SELF']) == 'dashboard.php'){ ?>
 	<audio preload></audio>
 
@@ -35,5 +37,15 @@
 	</script>
 	<?php } ?>
 
+<footer class="site-footer">
+
+	<class="csqc">this is the footer </class="csqc">
+  
+</footer>
+
+
+
 </body>
+
+
 </html>
