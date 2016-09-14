@@ -299,7 +299,7 @@ SUMMARY
 
 	function countMusic(PDO $db, $userid){
 
-		$sql = "SELECT user_id FROM
+		$sql = "SELECT COUNT(*) FROM
 					musics
 				WHERE
 					user_id = :id
@@ -309,6 +309,6 @@ SUMMARY
 					':id' => $userid
 				));
 			$result = $req->fetch(PDO::FETCH_ASSOC);
-			return count($result);
+			return $result;
 
 	}

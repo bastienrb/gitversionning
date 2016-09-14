@@ -49,7 +49,7 @@
 
 								<p>
 									<br>
-									Nombre de musiques postées : <?php echo $countmusic; ?>
+									Nombre de musiques postées : <?php echo $countmusic['COUNT(*)']; ?>
 								</p>
 
 							</div>
