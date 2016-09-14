@@ -10,12 +10,18 @@
 							<div class="col-xs-2 col-sm-2 col-md-1 col-lg-1">
 								<div class="author">
 									<?php
-									if(isset($_SESSION['image']) && !empty($_SESSION['image'])){
-										echo '<a href="edit_image.php"><img src="'.$_SESSION['image'].'" alt=""></a>';
-									}
-									else{
-										echo '<a href="edit_image.php"><img src="view/profil_pic/undefined.jpg" alt=""></a>';
-									}
+									$sql = "SELECT * FROM users WHERE username = :username LIMIT 1";
+											$req = $db->prepare($sql);
+											$req->execute(array(
+												':username' => $_GET['name']
+											));
+											$result = $req->fetch(PDO::FETCH_ASSOC);
+											if(!empty($result)){
+												echo '<img class="" src="'.$result['picture'].'" alt="">';
+											}
+											else{
+												echo '<img src="view/profil_pic/undefined.jpg" alt=""></a>';
+											}
 									?>
 								</div>
 							</div>
@@ -30,9 +36,12 @@
 								}
 								?>
 
-								<b class="username"><?php echo $_SESSION['username']; ?></b>
-								
-								
+								<b class="username"><?php echo $_GET['name']; ?></b>
+								<br/>
+								<p>
+									<br>
+									Création du compte : <?php echo $result['created_at']; ?>
+								</p>
 
 							</div>
 						</div>
