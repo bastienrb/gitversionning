@@ -34,6 +34,7 @@
 				audio.play();
 			})
 		});
+		
 	</script>
 	<?php } ?>
 
