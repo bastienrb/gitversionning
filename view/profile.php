@@ -9,6 +9,9 @@
 						<div class="row">
 							<div class="col-xs-2 col-sm-2 col-md-1 col-lg-1">
 								<div class="author">
+
+
+								
 									<?php
 									if(isset($_SESSION['image']) && !empty($_SESSION['image'])){
 										echo '<a href="edit_image.php"><img src="'.$_SESSION['image'].'" alt=""></a>';

@@ -37,15 +37,7 @@
 	</script>
 	<?php } ?>
 
-<footer class="site-footer">
-
-	<class="csqc">this is the footer </class="csqc">
-  
-</footer>
-
-
 
 </body>
 
 
-</html>
