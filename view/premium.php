@@ -8,7 +8,7 @@
 						
 						<form action="#" method="POST">
 							
-							<div id="logbox">
+							<div id="logbox" class="logboxpremium">
 								<h1>SOUNDCLOUD PREMIUM (*)</h1>
 								<form method="POST" action="login.php">
 									<div class="form-input">
