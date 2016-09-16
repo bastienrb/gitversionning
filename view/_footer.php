@@ -5,7 +5,7 @@
 
 	<script src="view/js/main.js"></script>
 
-	<footer>FOOTER</footer>
+	<footer></footer>
 
 	<?php if(basename($_SERVER['PHP_SELF']) == 'dashboard.php'){ ?>
 	<audio preload></audio>
