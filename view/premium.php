@@ -7,13 +7,20 @@
 					<div class="row">
 						
 						<form action="#" method="POST">
-							<div class="form-group">
-								<label for="title">Soundcloud</label>
-							</div>
 							
 							<div id="logbox">
 								<h1>SOUNDCLOUD PREMIUM (*)</h1>
 								<form method="POST" action="login.php">
+									<div class="form-input">
+										<span class="email">
+											<input type="text" name="email" placeholder="Email">
+										</span>
+									</div>
+									<div class="form-input">
+										<span class="username">
+											<input type="text" name="email" placeholder="Email">
+										</span>
+									</div>
 									<div class="form-input">
 										<span class="email">
 											<input type="text" name="email" placeholder="Email">
