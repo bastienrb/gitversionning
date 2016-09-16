@@ -12,7 +12,7 @@
 							</div>
 							
 							<div id="logbox">
-								<h1>PASSER PREMIUM</h1>
+								<h1>SOUNDCLOUD PREMIUM (*)</h1>
 								<form method="POST" action="login.php">
 									<div class="form-input">
 										<span class="email">
@@ -27,7 +27,7 @@
 									<div class="form-submit">
 										<input type="submit" value="Connecter">
 									</div>
-									<p class="account">Vous n'avez pas de compte ? <a href="register.php">Inscrivez vous !</a></p>
+									<p class="account">(*) 6,99€ / mois puis 9,99€ <a href="register.php">En savoir plus</a></p>
 								</form>
 							</div>
 						</div>
