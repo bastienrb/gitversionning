@@ -282,3 +282,33 @@ SUMMARY
 			':id' => $user_id
 		));
 	}
+
+	function getUserid(PDO $db, $username){
+		$sql = "SELECT * FROM
+					users
+				WHERE
+					username = :username
+				";
+			$req = $db -> prepare($sql);
+			$req -> execute(array(
+					':username' => $username
+				));
+			$result = $req->fetch(PDO::FETCH_ASSOC);
+			return $result['id'];
+	}
+
+	function countMusic(PDO $db, $userid){
+
+		$sql = "SELECT COUNT(*) FROM
+					musics
+				WHERE
+					user_id = :id
+				";
+			$req = $db -> prepare($sql);
+			$req -> execute(array(
+					':id' => $userid
+				));
+			$result = $req->fetch(PDO::FETCH_ASSOC);
+			return $result;
+
+	}
