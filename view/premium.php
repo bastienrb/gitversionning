@@ -18,21 +18,21 @@
 									</div>
 									<div class="form-input">
 										<span class="username">
-											<input type="text" name="email" placeholder="Email">
+											<input type="text" name="surname" placeholder="Nom">
 										</span>
 									</div>
 									<div class="form-input">
-										<span class="email">
-											<input type="text" name="email" placeholder="Email">
+										<span class="username">
+											<input type="text" name="name" placeholder="Prénom">
 										</span>
 									</div>
 									<div class="form-input">
 										<span class="password">
-											<input type="password" name="password" placeholder="Password">
+											<input type="password" name="password" placeholder="Mot de passe">
 										</span>
 									</div>
 									<div class="form-submit">
-										<input type="submit" value="Connecter">
+										<input type="submit" value="Passer Premium">
 									</div>
 									<p class="account">(*) 6,99€ / mois puis 9,99€ <a href="register.php">En savoir plus</a></p>
 								</form>
