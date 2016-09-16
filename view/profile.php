@@ -9,6 +9,9 @@
 						<div class="row">
 							<div class="col-xs-2 col-sm-2 col-md-1 col-lg-1">
 								<div class="author">
+
+
+								
 									<?php
 									$sql = "SELECT * FROM users WHERE username = :username LIMIT 1";
 											$req = $db->prepare($sql);

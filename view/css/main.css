@@ -283,6 +283,20 @@ p.account a {
 	background-color: #2ecc71;
 }
 
+.site-footer, .page-wrap:after {
+  /* .push must be the same height as footer */
+	height: 142px; 
+}
+.site-footer {
+  background: #333;
+}
+
+.text {
+	color: white;
+}
+
+
+
 .image:before {
 	-moz-transition: opacity 0.2s ease-in-out;
 	-webkit-transition: opacity 0.2s ease-in-out;
@@ -421,6 +435,8 @@ p.account a {
 	width: 100%;
 	font-family: monospace;
 	font-size: 10px; /* reduced font size */
+
+
 }
 
 .imagelogo img{
@@ -434,4 +450,9 @@ p.account a {
 
 .feedtext{
 	color: white;
+}
+
+
+.logboxpremium{
+	margin-top: 100px;
 }

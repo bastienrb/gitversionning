@@ -5,6 +5,8 @@
 
 	<script src="view/js/main.js"></script>
 
+	<footer></footer>
+
 	<?php if(basename($_SERVER['PHP_SELF']) == 'dashboard.php'){ ?>
 	<audio preload></audio>
 
@@ -32,8 +34,11 @@
 				audio.play();
 			})
 		});
+		
 	</script>
 	<?php } ?>
 
+
 </body>
-</html>
+
+
