@@ -5,7 +5,6 @@
 			<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 midway-horizontal midway-vertical fadeInDown animated">
 				<div id="musicfeed">
 					<h1><i class="fa fa-pencil"></i> Passer à Soundcloud Premium</h1>
-					<div class="block animated fadeInDown">
 						<div class="row">
 							
 								<form action="#" method="POST">
