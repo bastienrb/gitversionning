@@ -8,8 +8,6 @@
 					</div>
 					<div class="col-xs-10 col-sm-10 col-md-11 col-lg-11">
 						<a href="premium.php " target="_blank" class="btn"><i class="fa fa-plus"></i> Version Premium</a>
-						<a href="https://soundcloud.com/bastien-robert" target="_blank" class="btn">Soundcloud : Bastien</a>
-						<a href="https://soundcloud.com/roland-vrignon-1" target="_blank" class="btn">Soundcloud : Roland</a>
 						<a href="logout.php" class="btn">Déconnexion</a>
 						<a href="edit_image.php" class="btn">Profil</a>
 						<a href="add_music.php" class="btn"><i class="fa fa-plus"></i> Ajouter une musique</a>
