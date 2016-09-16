@@ -11,7 +11,7 @@
 						<a href="https://soundcloud.com/bastien-robert" target="_blank" class="btn">Soundcloud : Bastien</a>
 						<a href="https://soundcloud.com/roland-vrignon-1" target="_blank" class="btn">Soundcloud : Roland</a>
 						<a href="logout.php" class="btn">Déconnexion</a>
-						<a href="edit_image.php" class="btn">Profil</a>
+						<a href="edit_image.php" class="btn">Editer le Profil</a>
 						<a href="add_music.php" class="btn"><i class="fa fa-plus"></i> Ajouter une musique</a>
 					</div>
 				</div>
